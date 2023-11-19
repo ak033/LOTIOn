@@ -1,0 +1,430 @@
+body{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#container > .top-header {
+  border-top: 3px solid black;
+}
+.top-header {
+  display: flex;
+  border-bottom: 1px solid black;
+}
+
+
+.top-header aside {
+  /* background-color: red; */
+  flex: 0 1 10%;
+  display: flex;
+  justify-content: flex-start;
+}
+#menu-button {
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  padding: 0 20px;
+  font-size: 2em;
+  background-color: transparent;
+  color: inherit;
+  font-family: inherit;
+
+}
+#menu-button:hover{
+  background-color: maroon;
+  color: white;
+  
+}
+#logo-header {
+  flex: 1;
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+}
+#logo-header2 {
+  color: gray;
+  font-size: 0.7em;
+  padding-top: 4px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#side-navbar{
+  flex: 0 1 20%;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  border-right: 1px solid black;
+}
+#sideNote-container{
+  flex: 1;
+  overflow-y: auto;
+  height:100vh;
+  width:22vw;
+}
+.side-header{
+  display: flex;
+  border-bottom: 1px solid black;
+}
+#sideNote-container > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.note-s
+#side-navbar .side-header-container {
+  display: flex;
+  flex-direction: column;
+}
+#side-navbar .side-header-container h2 {
+  padding: 10px 16px;
+}
+#write-box {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container{
+  display:flex;
+  height: 100vh;
+  margin:0;
+}
+
+#side-header{
+  display: flex;
+  border-bottom: 1px solid #DFDDDD;
+}
+
+.side-header h2{
+  flex:1;
+}
+
+#add-button{
+  cursor: pointer;
+  text-decoration: none;
+  flex: 0 1 20%;
+  font-size: 1.5em;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  font-family: inherit;
+}
+#add-button:hover{
+  background-color: maroon;
+  color: white;
+}
+
+#empty-note{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  color: gray;
+  padding: 16px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.my-note{
+
+  display: flex;
+  /* background-color: red; */
+  border-bottom: 1px solid #B6B6B6;
+  cursor: pointer;
+  overflow: hidden;
+  height: 150px;
+
+}
+
+.my-note a{
+  padding: 30px;;
+  display: block;
+  width:100%;
+  height: 100%;
+}
+.my-note a:hover,
+.my-note a.active{
+  background-color: #CB2C2C;
+  color: #EDEDED;
+}
+
+
+#text-header{
+  display: flex;
+  background-color: #C1C1C1;
+  padding: 20px;
+}
+.my a{
+  display: block;
+
+}
+
+#note-description{
+  flex: 1;
+
+}
+#note-description input{
+    display: block;
+    background-color: #C1C1C1;
+    border: none;
+}
+#note-description .main-title{
+  font-size: 1.5em;
+}
+
+#note-buttons{
+  flex: 0 1 140px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#note-buttons a {
+  padding: 4px 8px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+#edit-button:hover {
+  background-color: #1E7ED1;
+  color: #E4E4E4;
+  outline: 1px solid black
+}
+
+.text-header{
+  background-color: blue;
+}
+
+
+#edit-button{
+  color: #1E7ED1;
+  padding: 400px;
+}
+
+#delete-button{
+  color: #DD2424;
+}
+
+#delete-button:hover {
+  background-color: #DD2424;
+  color: #E4E4E4;
+  outline: 1px solid black
+}
+
+
+#save-button{
+  color: #069E00;
+}
+
+#save-button:hover {
+  background-color: #069E00;
+  color: #E4E4E4;
+  outline: 1px solid black
+}
+
+#notes-main{
+  margin: 15px;
+
+}
+
+.side-date{
+  color: #A7A7A7;
+  font-size: 0.6em;
+  margin-top: 4px;
+  text-indent: 1px;
+}
+
+.note-preview{
+  padding: 10px 0;
+  font-size: 0.6em;
+}
+
+#no-note{
+  margin-top: 200px; 
+  display: flex;
+  flex: 1;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: gray;
+
+}
+
+.google-details{
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+#google-container{
+  width: 100%;
+  margin-top: 20px;
+  background-color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+}
+#google-container img{
+  right: 0;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.drop-header{
+  display: flex;
+  gap: 10px;
+
+}
+#drop-pic{
+  background-color: #ACD4F8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  border-radius: 50%;
+
+
+}
+.drop-down-details{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 15px;
+  width: 300px;
+  height: 130px;
+  position: absolute;
+  top: calc(100% + 1rem);
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 15px 0 rgba(0,0,0,0.1);
+  background-color: #f2f2f2;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+.show-drop{
+  visibility:1;
+}
+
+.hide-drop{
+  visibility: hidden;
+}
+
+.profile-pic{
+  margin-bottom: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  margin-right: 35px ;
+  font-size: 20px;
+  border-radius: 50%;
+  background-color: #ACD4F8;
+  width: 40px;
+  height: 40px;
+}
+
+/* .profile-pic:focus + .drop-down-details {
+  opacity: 1;
+} */
+
+#login-buttons{
+
+  
+}
+.login-center{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+}
+#logo-area{
+  margin-bottom: 20px;
+}
+
+#sign-in{
+  display: flex;
+  flex-direction: column;
+  margin-left:auto;
+}
+.sign-in-box{
+  padding: 40px;
+  outline: 2px solid black;
+  border-radius:2%;
+}
+#sign-in h1{
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  /* margin-left: 70px; */
+}
+#sign-in h5{
+  color: gray;
+  font-size: 0.9em;
+  padding-top: 4px;
+}
+#sign-in button{
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  padding: 10px;
+  outline: 1px solid black;
+  border-radius: 2%;
+  
+}
+
+#sign-in button:hover{
+  cursor: pointer;
+  background-color:#E5E5E5;
+}
+
+#login{
+  display: flex;
+  gap: 15px;  
+  margin-right: 90px;
+}
+
+#logo-area{
+
+  margin-right: 500px;
+}
+
+#logo-area h1{
+  font-size: 4rem;
+}
+#logo-area h5{
+  color: gray;
+  font-size: 1.5em;
+  padding-top: 4px;
+}
+
+.vertical-line {
+
+  border: none;
+  border-left: 2px solid #ccc;
+  height: 90%;
+  width: 0;
+  position: absolute;
+  left:37%;
+  transform: translate(-50%);
+}
